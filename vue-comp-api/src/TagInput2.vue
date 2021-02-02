@@ -1,7 +1,7 @@
 <template>
     <input type="text" v-model="tagInput" class="px-4 py-2 border-2 border-grey-500 rounded-lg outline-none focus:border-indigo-400 block" placeholder="Add new tag..." @keyup.enter="addTag(tagInput)">
 
-    <button class="focus:outline-none text-gray-400 hover:underline mt-2" @click="removeTag(tag)" v-show="tags.length">Remove All Tags</button>
+    <button class="focus:outline-none text-gray-400 hover:underline mt-2" @click="clearAllTags" v-show="tags.length">Remove All Tags</button>
 
     <ul class="list-disc list-inside mt-4">
       <li v-for="tag in tags" :key="tag" class="">
