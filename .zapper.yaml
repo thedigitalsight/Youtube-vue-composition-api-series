@@ -1,0 +1,8 @@
+approvals:
+  pattern: "^(:\\+1:|👍)" # must start with thumbs up
+  minimum: 1 # at least two approvals from other people necessary
+  ignore: pr_opener # do not count approval from PR opener
+  from: # has to be either one of the following
+    users:
+      - jd-0001
+      - aloksoni11
